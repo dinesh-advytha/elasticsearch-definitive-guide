@@ -8,6 +8,8 @@ The only requirement for installing Elasticsearch is a recent version of Java.
 Preferably, you should install the latest version of the((("Java", "installing"))) official Java
 from http://www.java.com[_www.java.com_].
 
+TIP: On Microsfot Windows you must install Java JDK (not just Java JRE) and set JAVA_HOME environment variable to the JDK path.
+
 You can get the latest version of Elasticsearch from
 https://www.elastic.co/downloads/elasticsearch[_elastic.co/downloads/elasticsearch_].
 
@@ -48,6 +50,9 @@ http://curl.haxx.se/download.html[`http://curl.haxx.se/download.html`]. cURL
 provides a convenient way to submit requests to Elasticsearch and
 installing cURL enables you to copy and paste many of the examples in this
 book to try them out.
+
+TIP: In Microsoft Windows you must double quotes instead of single quotes in the curl commands. 
+      For example: curl "http://localhost:9200/?pretty"
 
 You should see a response like this:
 
